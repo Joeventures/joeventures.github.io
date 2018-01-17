@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Madlibs</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script type="text/javascript">
+  var companies = ["Wal-Mart", "McDonald's", "Kroger", "Dutch East India Company", "Apple"];
+  var animals = ["Parrot", "Zebra", "Wildebeest", "Bear"];
+
+  for(i = 0; i < 5; i++) {
+    company = companies[Math.floor(Math.random() * companies.length)];
+    animal = animals[Math.floor(Math.random() * animals.length)];
+    aOrAn = ['A','E','I','O','U'].includes(company[0]) ? "an" : "a";
+
+    elevatorPitch = "My company is " + aOrAn + " " + company + " for " + animal + "s!";
+    console.log(elevatorPitch);
+  }
+  </script>
+</body>
+</html>
